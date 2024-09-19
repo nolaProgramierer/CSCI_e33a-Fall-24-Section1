@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex Navbar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            #container {
+                height: 1000px;
+                width: 100%;
+                background-color: beige;
+            }
+
+            /* --------------------------------- */
+            /* Navbar CSS */
+            /* --------------------------------- */    
+            h1 {
+                text-align: center;
+            }
+            nav {
+                /* background highlighted for demo purposes */
+                background-color: rgb(163, 163, 163);
+                border-radius: 12px;
+            }
+            ul {
+                display: flex;
+                height: 40px;
+                flex-direction: row-reverse;
+                align-items: center;
+                list-style-type: none;
+                margin-top: 0px; 
+            }
+            li {
+                margin-right: 1em;
+            }
+            li a {
+                color: white;
+                text-decoration: none;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+
+            /* --------------------------------- */
+            /* Form CSS */
+            /* --------------------------------- */
+            #form-container h1 {
+                font-size: 4em;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+            #form-btns {
+                display: flex;
+                gap: 50px;
+                margin-top: 1em;
+            }
+            form > input {
+                border-radius: 12px;
+                height: 2em;
+                width: 36%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>In section navbar exercise</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Your choice0</a></li>
+                    <li><a href="#">Your choice1</a></li>
+                    <li><a href="#">Your choice2</a></li>
+                </ul>
+            </nav>
+            
+            <div id="form-container">
+               <h1>Google</h1>
+                <form action="https://google.com/search" method="get">
+                    <input autofocus id="query" type="text" name="q">
+                    <div id="form-btns">
+                        <input class="btn-search" type="submit" value="Google Search">
+                        <input class="btn-search" type="submit" name="btnI" value="I'm Feeling Lucky">
+                    </div>
+                </form>
+            </div>
+
+        </div>   
+    </body>
+</html>
